@@ -10,7 +10,7 @@ var bio = {
 		twitter: "@sharabhss",
 		location: "New York City"
 	},
-	photoBio: "images/fry.jpg",
+	photoBio: "http://placebeard.it/g/640/480",
 	welcomeMsg: "Welcome!",
 	skills: [
 		"HTML", "CSS", "JavaScript", "Git", "Java", "SQL", "MS. Access", "Wordpress", "Google Analytics", "MS Office 2016", "Adobe CS6",
@@ -97,25 +97,25 @@ var projects = {
 		title: "sharabhshukla.com",
 		dates: "May 2016",
 		description: "Devepoled a personl website using HTML, CSS, Bootstrap, Jekyll, Github, and JavaScript to highlight projects, contact infomation, and photography portfolio.",
-		images: ["images/fry.jpg"]
+		images: ["https://placebear.com/g/600/400"]
 	},
 	{
 		title: "HTML/CSS Portfolio",
 		dates: "July 2017",
 		description: "Developed a personal portfolio using HTML and CSS as part of the Front-end Web Developer Nanodegree course.",
-		images: ["images/fry.jpg"]
+		images: ["https://placeimg.com/640/480/any", "https://placeimg.com/640/480/people", "https://placeimg.com/640/480/tech"]
 	},
 	{
 		title: "ATP Men's Tennis World Tour Databsae",
 		dates: "Spring 2016",
 		description: "Developed a 20,000 row database of tennis data from 20 seasons working primarily with Microsoft Access to analyze past results and find trends to predict future matches.",
-		images: ["images/fry.jpg"]
+		images: ["https://placeimg.com/640/480/nature/grayscale"]
 	},
 	{
 		title: "Client Server Rock-Paper-Scissors",
 		dates: "Fall 2015",
 		description: "Developed a command line based rock, paper, and sissors game between single or mulpitle clients and a server through TCP connection. Worked primarily with socket programming in Java to connect users via TCP client and the game itself was written in Java.",
-		images: ["images/fry.jpg", "images/fry.jpg"]
+		images: ["http://loremflickr.com/320/240?random=1", "http://loremflickr.com/320/240?random=2"]
 	}],
 	display: function()
 	{
@@ -130,8 +130,10 @@ var projects = {
 			$(".project-entry:last").append(formattedDescription);
 			if (proj.images.length > 0)
 			{
-				var formattedImage = HTMLprojectImage.replace("%data%", proj.images[0]);
-				$(".project-entry:last").append(formattedImage);
+				proj.images.forEach(function(image){
+					var formattedImage = HTMLprojectImage.replace("%data%", image);
+					$(".project-entry:last").append(formattedImage);
+				})
 			}
 		});
 	}

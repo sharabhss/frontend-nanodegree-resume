@@ -74,7 +74,7 @@ h5 {
 .date-text {
   font-style: italic;
   font-size: medium;
-  color: #999;
+  color: tomato;
   line-height: 16px;
   float: left;
 }
@@ -82,7 +82,7 @@ h5 {
 .location-text {
   font-style: italic;
   font-size: medium;
-  color: #999;
+  color: tomato;
   line-height: 16px;
   float: right;
 
@@ -173,6 +173,10 @@ ul {
 
 img {
   padding: 10px;
+}
+
+.proj-img {
+  max-width: 250px;
 }
 
 span {
