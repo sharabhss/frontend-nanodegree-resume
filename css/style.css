@@ -24,6 +24,10 @@ h6 {
   padding: 0 5%;
 }
 
+body {
+  background-color: darkslategray;
+}
+
 h1 {
   font-size: 40px;
   color: #f5a623;
@@ -33,8 +37,8 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 24px;
-  color: #999;
+  font-size: x-large;
+  color: limegreen;
   line-height: 29px;
   padding: 10px;
 }
@@ -44,6 +48,7 @@ h3 {
   font-size: 20px;
   color: #000;
   line-height: 22px;
+  padding: 0;
 }
 
 h4 {
@@ -61,10 +66,14 @@ h5 {
 
 }
 
+#role {
+  padding: 0;
+  color: white;
+}
 
 .date-text {
   font-style: italic;
-  font-size: 14px;
+  font-size: medium;
   color: #999;
   line-height: 16px;
   float: left;
@@ -72,7 +81,7 @@ h5 {
 
 .location-text {
   font-style: italic;
-  font-size: 14px;
+  font-size: medium;
   color: #999;
   line-height: 16px;
   float: right;
@@ -80,7 +89,7 @@ h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: medium;
   color: #333;
   line-height: 21px;
 }
@@ -90,6 +99,8 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+  font-size: large;
+  font-weight: bold;
 }
 
 .welcome-message {
@@ -105,7 +116,8 @@ a {
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: lightcyan;
+  color: darkorange;
 }
 
 .orange-text {
@@ -118,19 +130,15 @@ a {
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: lightcyan;
   padding-bottom: 10px;
   clear: both;
 }
 
-.dark-gray {
-  background-color: #4a4a4a;
+#projects {
+  background-color: lightsteelblue;
 }
-
 /* TODO: Replace with image later */
-#header {
-  background-color: #484848;
-}
 
 .flex-box {
   display: -webkit-flex;
