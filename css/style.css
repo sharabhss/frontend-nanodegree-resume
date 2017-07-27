@@ -1,14 +1,4 @@
-body,
-div,
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, div, ul, li, p, h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -18,9 +8,7 @@ h6 {
   overflow: auto;
 }
 
-.education-entry,
-.work-entry,
-.project-entry {
+.education-entry, .work-entry, .project-entry {
   padding: 0 5%;
 }
 
@@ -58,12 +46,8 @@ h4 {
   line-height: 17px;
 }
 
-h2,
-h3,
-h4,
-h5 {
+h2, h3, h4, h5 {
   padding: 10px 5%;
-
 }
 
 #role {
@@ -85,7 +69,6 @@ h5 {
   color: tomato;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -138,6 +121,8 @@ a {
 #projects {
   background-color: lightsteelblue;
 }
+
+
 /* TODO: Replace with image later */
 
 .flex-box {
@@ -187,6 +172,7 @@ span {
   text-align: center;
 }
 
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -226,8 +212,7 @@ span {
 }
 
 @media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
+  #skills-h3, .biopic {
     display: block;
   }
 }
