@@ -9,8 +9,8 @@ var bio = {
 		twitter: "@sharabhss",
 		location: "New York City"
 	},
-	photoBio: "http://placebeard.it/g/640/480",
-	welcomeMsg: "Welcome!",
+	biopic: "http://placebeard.it/g/640/480",
+	welcomeMessage: "Welcome!",
 	skills: ["HTML", "CSS", "JavaScript", "Git", "Java", "SQL", "MS. Access", "Wordpress", "Google Analytics", "MS Office 2016", "Adobe CS6", ],
 	//replace data from object and feed it to html for display
 	display: function() {
@@ -19,21 +19,19 @@ var bio = {
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
 		$("#header").prepend(formattedName);
 		var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-		$("#topContacts").append(formattedMobile);
-		$("#footerContacts").append(formattedMobile);
+		$("#topContacts, #footerContacts").append(formattedMobile);
 		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-		$("#topContacts").append(formattedEmail);
-		$("#footerContacts").append(formattedEmail);
+		$("#topContacts, #footerContacts").append(formattedEmail);
 		var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 		$("#topContacts").append(formattedGithub);
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 		$("#topContacts").append(formattedLocation);
 		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 		$("#footerContacts").append(formattedTwitter);
-		var formattedBioPic = HTMLbioPic.replace("%data%", bio.photoBio);
+		var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 		$("#header").append(formattedBioPic);
-		var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
-		$("#header").append(formattedWelcomeMsg);
+		var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+		$("#header").append(formattedWelcomeMessage);
 		// read skills array and list 
 		if (bio.skills.length > 0) {
 			$("#header").append(HTMLskillsStart);
@@ -82,8 +80,8 @@ var work = {
 		});
 	}
 };
-//call display function
-work.display();
+//call display functionwork.display();
+
 // projects object
 var projects = {
 	projects: [{
@@ -135,7 +133,7 @@ var education = {
 		degree: "Bachelor of Science",
 		dates: "January 2013 - May 2016",
 		location: "Stony Brook, NY",
-		majors: ["Information Systems, Specialization: Business & Economics"]
+		majors: ["Information Systems", "Specialization: Business & Economics"]
 	}],
 	onlineCourses: [{
 		title: "Front-end Web Developer Nanodegree",
