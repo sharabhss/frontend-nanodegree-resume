@@ -1,4 +1,7 @@
 # Project Details
+
+[Live Github Page](https://sharabhss.github.io/frontend-nanodegree-resume/)
+
 ## How do I complete this project?
 Review the Online Resume [Project Rubric](https://review.udacity.com/?_ga=1.189245867.12280332.1465333852#!/projects/2962818615/rubric).
 
