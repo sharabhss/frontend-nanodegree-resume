@@ -9,7 +9,7 @@ var bio = {
 		twitter: "@sharabhss",
 		location: "New York City"
 	},
-	biopic: "http://placebeard.it/g/640/480",
+	biopic: "img/bio-pic.jpg",
 	welcomeMessage: "Welcome!",
 	skills: ["HTML", "CSS", "JavaScript", "Git", "Java", "SQL", "MS. Access", "Wordpress", "Google Analytics", "MS Office 2016", "Adobe CS6", ],
 	//replace data from object and feed it to html for display
@@ -51,7 +51,7 @@ var work = {
 		title: "Associate Developer",
 		dates: "July 2017 - Present",
 		location: "Basking Ridge, New Jersey",
-		description: "Front-end web development training followed by project involvement."
+		description: "Front-end web development training followed by project in the field."
 	}, {
 		employer: "Creative Illustrators Agency",
 		title: "Web Content Manager",
@@ -80,7 +80,8 @@ var work = {
 		});
 	}
 };
-//call display functionwork.display();
+//call display function
+work.display();
 
 // projects object
 var projects = {
@@ -88,7 +89,7 @@ var projects = {
 		title: "sharabhshukla.com",
 		dates: "May 2016",
 		description: "Devepoled a personl website using HTML, CSS, Bootstrap, Jekyll, Github, and JavaScript to highlight projects, contact infomation, and photography portfolio.",
-		images: ["https://placebear.com/g/600/400"]
+		images: ["https://placeimg.com/640/480/tech"]
 	}, {
 		title: "HTML/CSS Portfolio",
 		dates: "July 2017",
@@ -103,7 +104,7 @@ var projects = {
 		title: "Client Server Rock-Paper-Scissors",
 		dates: "Fall 2015",
 		description: "Developed a command line based rock, paper, and sissors game between single or mulpitle clients and a server through TCP connection. Worked primarily with socket programming in Java to connect users via TCP client and the game itself was written in Java.",
-		images: ["http://loremflickr.com/320/240?random=1", "http://loremflickr.com/320/240?random=2"]
+		images: ["https://placeimg.com/640/480/nature/grayscale", "https://placeimg.com/640/480/tech"]
 	}],
 	//replace data from object and feed it to html for display
 	display: function() {
