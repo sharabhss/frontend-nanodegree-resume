@@ -89,22 +89,22 @@ var projects = {
 		title: "sharabhshukla.com",
 		dates: "May 2016",
 		description: "Devepoled a personl website using HTML, CSS, Bootstrap, Jekyll, Github, and JavaScript to highlight projects, contact infomation, and photography portfolio.",
-		images: ["https://placeimg.com/640/480/tech"]
+		images: ["img/sharabhshuklawebsite.png"]
 	}, {
 		title: "HTML/CSS Portfolio",
 		dates: "July 2017",
 		description: "Developed a personal portfolio using HTML and CSS as part of the Front-end Web Developer Nanodegree course.",
-		images: ["https://placeimg.com/640/480/any", "https://placeimg.com/640/480/people", "https://placeimg.com/640/480/tech"]
+		images: ["img/ss-logo.png", "img/workspace.jpg"]
 	}, {
 		title: "ATP Men's Tennis World Tour Databsae",
 		dates: "Spring 2016",
 		description: "Developed a 20,000 row database of tennis data from 20 seasons working primarily with Microsoft Access to analyze past results and find trends to predict future matches.",
-		images: ["https://placeimg.com/640/480/nature/grayscale"]
+		images: ["img/atptennis.png"]
 	}, {
 		title: "Client Server Rock-Paper-Scissors",
 		dates: "Fall 2015",
 		description: "Developed a command line based rock, paper, and sissors game between single or mulpitle clients and a server through TCP connection. Worked primarily with socket programming in Java to connect users via TCP client and the game itself was written in Java.",
-		images: ["https://placeimg.com/640/480/nature/grayscale", "https://placeimg.com/640/480/tech"]
+		images: ["img/rock.png", "img/paper.png", "img/scissor.png"]
 	}],
 	//replace data from object and feed it to html for display
 	display: function() {
